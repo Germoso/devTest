@@ -1,0 +1,37 @@
+.loading__container {
+    padding: 0 12px;
+    margin-top: 40px;
+    width: 80%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 0 4px 4px #F3F2FF;
+    margin-bottom: 50px;
+}
+
+.loading__container div{
+    width: 100%;
+    background-color: #E2E2E2;
+    border-radius: 12px;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.loading__title {
+    width: 40px;
+    height: 40px;
+}
+
+.loading__content {
+    height: 100px;
+}
+@keyframes skeleton-loading {
+    0% {
+        background-color: #ebecff;
+    }
+    100% {
+        background-color: #F8F8F8;
+    }
+}

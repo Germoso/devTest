@@ -1,0 +1,19 @@
+.error__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #494fa8;
+}
+
+.error__text {
+    margin: 24px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.fa-face-dizzy {
+    font-size: 50px;
+}

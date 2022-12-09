@@ -1,0 +1,44 @@
+.sort__container {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sort__button {
+    border: none;
+    background: none;
+    padding: 0px 4px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #494fa8;
+    color: #494fa8;
+    border-radius: 16px;
+    transition: all .2s;
+}
+
+.sort__button:hover {
+    background-color: #494fa8;
+    color: #ffffff;
+}
+
+.icon__wrapper {
+    transition: all .15s;
+}
+
+.rotate-icon {
+    transform: rotateZ(180deg);
+}
+
+.fa-sort-down {
+    font-size: 24px;
+    padding-bottom: 12px;
+    margin: 0 4px;
+}
+
+.sort__text {
+    margin: auto 4px;
+    font-size: 16px;
+}
