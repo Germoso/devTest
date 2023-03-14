@@ -11,3 +11,7 @@ https://github.com/Germoso
 REPO
 
 https://github.com/Germoso/devTest
+
+DEPLOY
+
+https://dev-test-two.vercel.app
