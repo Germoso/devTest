@@ -10,7 +10,13 @@ import IndexHeader from "@/components/IndexHeader"
  * @param {Object} data Datos validos para el esquema mongoose
  */
 const insertToDataBase = async (data) => {
-    fetch(process.env.DATABASE_API_URL || "http://localhost:3000/api/mongo", {
+    /**
+     * IMPORTANTE!!!
+     * local = "http://localhost:3000/api/mongo"
+     * produccion = https://dev-test-two.vercel.app/
+     */
+    console.log(process.env.DATABASE_API_URL)
+    fetch(process.env.DATABASE_API_URL, {
         method: "POST",
         body: JSON.stringify(data),
 
