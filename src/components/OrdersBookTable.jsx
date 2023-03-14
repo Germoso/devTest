@@ -1,5 +1,5 @@
 import React from "react"
-import { Card, Table } from "@nextui-org/react"
+import { Badge, Card, Table, text } from "@nextui-org/react"
 
 /**
  * ESTA ES LA TABLA DEL ORDERSBOOK
@@ -10,6 +10,7 @@ import { Card, Table } from "@nextui-org/react"
 const OrdersBookTable = ({ data }) => {
     return (
         <Card>
+            {/* <Badge content="COÑO PERO" color="success" placement="" shape="circle" style={{ display: "absolute" }}> */}
             <Table
                 aria-label="Example table with static content"
                 css={{
@@ -45,6 +46,8 @@ const OrdersBookTable = ({ data }) => {
                     onPageChange={(page) => console.log({ page })}
                 />
             </Table>
+
+            {/* </Badge> */}
         </Card>
     )
 }

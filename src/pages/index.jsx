@@ -10,7 +10,7 @@ import IndexHeader from "@/components/IndexHeader"
  * @param {Object} data Datos validos para el esquema mongoose
  */
 const insertToDataBase = async (data) => {
-    fetch("http://localhost:3000/api/mongo", {
+    fetch(process.env.DATABASE_API_URL || "http://localhost:3000/api/mongo", {
         method: "POST",
         body: JSON.stringify(data),
 
@@ -80,12 +80,23 @@ const index = () => {
 
     return (
         <>
-            <Container css={{ display: "flex", flexDirection: "center", gap: "$10", marginBottom: "$20" }}>
+            <Container
+                css={{
+                    marginBottom: "$20",
+                    gap: "$10",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                }}
+            >
                 <IndexHeader />
                 <Cards data={symbolData} />
                 <LineChart data={data} />
                 <Text h2>Orders Book</Text>
                 <OrdersBookTable data={tableData} />
+                <Text css={{ textAlign: "center" }} color="success">
+                    Datos insertados en la base de datos
+                </Text>
             </Container>
         </>
     )
