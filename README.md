@@ -1,3 +1,9 @@
+## Instala las dependencias
+
+```bash
+npm install
+```
+
 Samill Alexander Germoso Montero
 
 +1 809 856 6641
