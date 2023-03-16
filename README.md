@@ -4,6 +4,12 @@
 npm install
 ```
 
+## Ejecuta el proyecto localmente
+
+```bash
+npm run dev
+```
+
 Samill Alexander Germoso Montero
 
 +1 809 856 6641
